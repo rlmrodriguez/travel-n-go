@@ -115,8 +115,6 @@ body {
 }
 
 .change .hamburger-menu {
-  right: 33rem;
-
   span:hover {
     width: 100%;
   }
@@ -283,10 +281,10 @@ body {
   text-align: center;
 
   .heading {
-    width: 60%;
+    width: 50%;
     margin: auto;
     color: $white;
-    font-size: 10rem;
+    font-size: 8rem;
     text-transform: uppercase;
     letter-spacing: 0.1rem;
     text-shadow: 0.3rem 0.5rem 0.4rem $black;
@@ -300,7 +298,8 @@ body {
   box-shadow: 0.5rem 0.5rem 1rem rgba(0, 0, 0, 0.6);
   text-shadow: 0 0.1rem 0.2rem rgba(0, 0, 0, 0.6);
   color: $white;
-  font-size: 3rem;
+  font-size: 2rem;
+  font-weight: bold;
   margin-top: 3rem;
 
   &:hover {
@@ -980,7 +979,7 @@ body {
     padding: 6rem 0 0;
   }
   .featured-tours__heading {
-    font-size: 6rem;
+    font-size: 5rem;
     margin-bottom: 0;
   }
 
@@ -989,10 +988,15 @@ body {
   }
   .about__heading {
     margin-bottom: 2rem;
+    font-size: 5rem;
   }
 
   .reviews {
     padding: 6rem 0 0;
+
+    &__heading {
+      font-size: 5rem;
+    }
   }
   .review-bg {
     transform: skewX(0);
@@ -1023,6 +1027,10 @@ body {
 
   .contact {
     padding: 6rem 0 0;
+
+    &__text h2 {
+      font-size: 5rem;
+    }
   }
 
   .contact-container {
@@ -1109,6 +1117,9 @@ body {
 }
 
 @media (max-width: 720px) {
+  .header__text .heading {
+    width: 90%;
+  }
   .stats-wrapper {
     height: 50rem;
     flex-direction: column;
@@ -1125,10 +1136,9 @@ body {
     right: -70%;
   }
 
-  .change .hamburger-menu {
-    right: 35rem;
+  .header__text .heading {
+    font-size: 5.5rem;
   }
-
   .why-us-items {
     align-items: center;
     width: 80%;
@@ -1161,14 +1171,6 @@ body {
 }
 
 @media (max-width: 550px) {
-  .change .hamburger-menu {
-    right: 30rem;
-  }
-
-  .header__text .heading {
-    font-size: 5.5rem;
-  }
-
   .explore-now {
     font-size: 2.5rem;
   }
@@ -1176,13 +1178,10 @@ body {
 
 @media (max-width: 500px) {
   html {
-    font-size: 45%;
+    font-size: 43%;
   }
 
   .why-us-items p {
     width: 95%;
-  }
-  .change .hamburger-menu {
-    right: 40rem;
   }
 }
