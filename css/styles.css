@@ -141,8 +141,8 @@ body {
 }
 
 .change .hamburger-menu .line-1 {
-  -webkit-transform: rotate(405deg) translate(0.3rem, 0.8rem);
-          transform: rotate(405deg) translate(0.3rem, 0.8rem);
+  -webkit-transform: rotate(405deg) translate(0.3rem, 0.9rem);
+          transform: rotate(405deg) translate(0.3rem, 0.9rem);
 }
 
 .change .hamburger-menu .line-2 {
@@ -151,8 +151,8 @@ body {
 }
 
 .change .hamburger-menu .line-3 {
-  -webkit-transform: rotate(-405deg) translate(0.3rem, -0.8rem);
-          transform: rotate(-405deg) translate(0.3rem, -0.8rem);
+  -webkit-transform: rotate(-405deg) translate(0.3rem, -0.9rem);
+          transform: rotate(-405deg) translate(0.3rem, -0.9rem);
 }
 
 .line:nth-child(1), .line:nth-child(3) {
@@ -1086,6 +1086,9 @@ body {
 
 /* Media Queries */
 @media (max-width: 1400px) {
+  .header__text .heading {
+    font-size: 7rem;
+  }
   .about__items {
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
@@ -1193,7 +1196,7 @@ body {
   }
   .header__text .heading {
     width: 80%;
-    font-size: 8.5rem;
+    font-size: 6.5rem;
   }
   .explore-now {
     position: absolute;
@@ -1307,7 +1310,7 @@ body {
 
 @media (max-width: 850px) {
   .header__text .heading {
-    font-size: 7.5rem;
+    font-size: 6rem;
   }
   .stats-wrapper {
     width: 80%;
@@ -1409,7 +1412,7 @@ body {
 
 @media (max-width: 550px) {
   .explore-now {
-    font-size: 2.5rem;
+    font-size: 2rem;
   }
 }
 
