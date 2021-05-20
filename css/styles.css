@@ -348,20 +348,15 @@ body {
           flex-direction: column;
 }
 
-.video-container {
+.header__bg {
   position: absolute;
   top: 0;
   left: 0;
   width: 100%;
   height: 100%;
   opacity: 0.75;
-}
-
-.video-container .bg-video {
-  width: 100%;
-  height: 100%;
-  -o-object-fit: cover;
-     object-fit: cover;
+  background: url(../images/header-bg.jpg) center no-repeat;
+  background-size: cover;
 }
 
 .header__text {
