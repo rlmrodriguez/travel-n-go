@@ -1,319 +1,390 @@
 <!DOCTYPE html>
 <html lang='en'>
 
-<head>
-  <meta charset='UTF-8'>
-  <meta name='viewport' content='width=device-width, initial-scale=1.0'>
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"
-    integrity="sha512-iBBXm8fW90+nuLcSKlbmrPcLa0OT92xO1BIsZ+ywDWZCvqsWgccV3gFoRBv0z+8dLJgyAHIhR35VZc2oM/gI1w=="
-    crossorigin="anonymous" />
-  <link rel='stylesheet' href='./css/styles.css'>
-  <link rel='shortcut icon' href='./images/tngo-favicon.ico?' type='image/x-icon'>
-  <title>Travel & Go</title>
-</head>
+  <head>
+    <meta charset='UTF-8'>
+    <meta name='viewport' content='width=device-width, initial-scale=1.0'>
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css"
+      integrity="sha512-xh6O/CkQoPOWDdYTDqeRdPCVd1SpvCA9XXcUnZS2FmJNp1coAFzvtCN9BmamE+4aHK8yyUHUSCcJHgXloTyT2A=="
+      crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel='stylesheet' href='./css/styles.css'>
+    <link rel='shortcut icon' href='./images/tngo-favicon.ico?' type='image/x-icon'>
+    <script defer src='./script.js'></script>
+    <title>Travel & Go</title>
+  </head>
 
-<body>
-  <div class='container'>
-    <!-- Navbar -->
-    <nav class='navbar' id='navbar'>
-      <ul class='menu'>
-        <li class='menu-item'>
-          <a href='#home' class='menu-link' data-content='Home'>Home</a>
-        </li>
-        <li class='menu-item'>
-          <a href='#tours' class='menu-link' data-content='Tours'>Tours</a>
-        </li>
-        <li class='menu-item'>
-          <a href='#about-us' class='menu-link' data-content='About Us'>About</a>
-        </li>
-        <li class='menu-item'>
-          <a href='#reviews' class='menu-link' data-content='Reviews'>Reviews</a>
-        </li>
-        <li class='menu-item'>
-          <a href='#contact' class='menu-link' data-content='Contact'>Contact</a>
-        </li>
-      </ul>
-      <div class='social-media'>
-        <a href='#'><i class='fab fa-facebook-f'></i></a>
-        <a href='#'><i class='fab fa-twitter'></i></a>
-        <a href='#'><i class='fab fa-instagram'></i></a>
-      </div>
-      <div class='hamburger-menu'>
-        <div class='line line-1'></div>
-        <div class='line line-2'></div>
-        <div class='line line-3'></div>
-      </div>
-    </nav>
+  <body>
+    <header class='header' id='home'>
 
-    <!-- Header -->
-    <header class='header center' id='home'>
-      <div class='logo'>
-        <h1>
-          <span class='center'>t</span>
-          <span class='center'>r</span>
-          <span class='center'>a</span>
-          <span class='center'>v</span>
-          <span class='center'>e</span>
-          <span class='center'>l</span>
-          <span class='center'>&</span>
-          <span class='center'>g</span>
-          <span class='center'>o</span>
-        </h1>
-      </div>
-      <div class='header__bg'>
-      </div>
-      <div class='header__text'>
-        <h1 class='heading'>We'll design the perfect trip for you. Keep calm and travel on!</h1>
-      </div>
-      <button class='explore-now btn'>Explore Now</button>
+      <!-- ============ -->
+      <!--     NAV      -->
+      <!-- ============ -->
+
+      <nav class='nav' id='navbar'>
+        <div class="container">
+          <div class='nav__logo'>
+            <h1>
+              <span class='center'>t</span>
+              <span class='center'>r</span>
+              <span class='center'>a</span>
+              <span class='center'>v</span>
+              <span class='center'>e</span>
+              <span class='center'>l</span>
+              <span class='center'>&</span>
+              <span class='center'>g</span>
+              <span class='center'>o</span>
+            </h1>
+          </div>
+          <ul id="navMenu" class='nav__menu'>
+            <li class='nav__menu-item'>
+              <a class="nav__link" href='#home'>Home</a>
+            </li>
+            <li class='nav__menu-item'>
+              <a class="nav__link" href='#tours'>Tours</a>
+            </li>
+            <li class='nav__menu-item'>
+              <a class="nav__link" href='#about'>About</a>
+            </li>
+            <li class='nav__menu-item'>
+              <a class="nav__link" href='#reviews'>Reviews</a>
+            </li>
+            <li class='nav__menu-item'>
+              <a class="nav__link" href='#contact'>Contact</a>
+            </li>
+            <div class='social-media'>
+              <a href='#'><i class='fab fa-facebook-f nav__link'></i></a>
+              <a href='#'><i class='fab fa-twitter nav__link'></i></a>
+              <a href='#'><i class='fab fa-instagram nav__link'></i></a>
+            </div>
+          </ul>
+
+          <span class="nav__btn">
+            <i id="openBtn" class="fa-solid fa-bars toggle"></i>
+            <i id="closeBtn" class="fa-solid fa-x hide toggle"></i>
+          </span>
+        </div>
+      </nav>
+
+      <!-- ============ -->
+      <!--     HERO     -->
+      <!-- ============ -->
+
+      <section class="hero">
+        <div class="container">
+          <div class='hero__text'>
+            <h1 class="hero__text-heading scroll">We'll arrange the
+              <span class="perfect">
+                <span class="letter letter-color-1">p</span>
+                <span class="letter letter-color-1">e</span>
+                <span class="letter letter-color-2">r</span>
+                <span class="letter letter-color-2">f</span>
+                <span class="letter letter-color-3">e</span>
+                <span class="letter letter-color-3">c</span>
+                <span class="letter letter-color-3">t</span>
+              </span>
+              trip for you. Keep calm & travel on!
+            </h1>
+          </div>
+          <button class='btn btn-primary scroll'>BOOK NOW</button>
+        </div>
+      </section>
     </header>
 
-    <!-- Featured Tours -->
+    <!-- ============ -->
+    <!--    TOURS     -->
+    <!-- ============ -->
+
     <section class='featured-tours' id='tours'>
-      <h1 class='featured-tours__heading'>Featured Tours</h1>
-      <div class='cards-wrapper'>
-        <div class='card'>
-          <div class='front-side'>
-            <img src='./images/boracay.jpg' class='card__img' alt='image of boracay island'>
-            <h1 class='tour-name'>Boracay</h1>
-            <ul class='card__list'>
-              <li class='card__list-item'>7-day tour</li>
-              <li class='card__list-item'>Lorem, ipsum dolor.</li>
-              <li class='card__list-item'>Lorem, ipsum dolor.</li>
-              <li class='card__list-item'>Lorem, ipsum dolor.</li>
-            </ul>
-            <button class='switch-side-btn'>Price &gt;</button>
+      <div class="container">
+        <h2 class='featured-tours__heading'>Featured Tours</h2>
+        <div class='cards__wrapper'>
+          <!-- Card 1 -->
+          <div class='card scroll'>
+            <div class='front-side '>
+              <div class="img__wrapper">
+                <img src='./images/boracay-400.webp' class='card__img' aria-hidden="true" loading="lazy"
+                  decoding="async" alt=''>
+                <span class='tour-name'>Boracay</span>
+              </div>
+              <button class='switch-btn'>Price <i class="fa-solid fa-greater-than"></i></button>
+              <ul class='featured-tours__description'>
+                <li>7-day tour</li>
+                <li>Lorem, ipsum dolor.</li>
+                <li>Lorem, ipsum dolor.</li>
+              </ul>
+            </div>
+            <div class='back-side'>
+              <button class='switch-btn'>
+                <i class="fa-solid fa-less-than"></i> Back
+              </button>
+              <p>Price starts at</p>
+              <span class='tour-price'>₱399<span>/pax</span></span>
+              <button class='btn btn-alt'>Let's Go!</button>
+            </div>
           </div>
-          <div class='back-side center'>
-            <button class='switch-side-btn'>
-              &lt; Back
-            </button>
-            <p>Price starts at</p>
-            <h3 class='tour-price'>₱399<span>/pax</span></h3>
-            <button class='booking-btn'>Let's Go! </button>
+          <!-- Card 2 -->
+          <div class='card scroll'>
+            <div class='front-side '>
+              <div class="img__wrapper">
+                <img src='./images/banaue-400.webp' class='card__img' aria-hidden="true" loading="lazy" decoding="async"
+                  alt=''>
+                <span class='tour-name'>Ifugao</span>
+              </div>
+              <button class='switch-btn'>Price <i class="fa-solid fa-greater-than"></i></button>
+              <ul class='featured-tours__description'>
+                <li>9-day tour</li>
+                <li>Lorem, ipsum dolor.</li>
+                <li>Lorem, ipsum dolor.</li>
+              </ul>
+            </div>
+            <div class='back-side'>
+              <button class='switch-btn'>
+                <i class="fa-solid fa-less-than"></i> Back
+              </button>
+              <p>Price starts at</p>
+              <span class='tour-price'>₱499<span>/pax</span></span>
+              <button class='btn btn-alt'>Let's Go!</button>
+            </div>
           </div>
-        </div>
-        <div class='card'>
-          <div class='front-side'>
-            <img src='./images/banaue.jpg' class='card__img' alt=''>
-            <h1 class='tour-name'>Banaue Rice Terraces</h1>
-            <ul class='card__list'>
-              <li class='card__list-item'>9-day tour</li>
-              <li class='card__list-item'>Lorem, ipsum dolor.</li>
-              <li class='card__list-item'>Lorem, ipsum dolor.</li>
-              <li class='card__list-item'>Lorem, ipsum dolor.</li>
-            </ul>
-            <button class='switch-side-btn'>Price &gt;</button>
-          </div>
-          <div class='back-side center'>
-            <button class='switch-side-btn'>
-              &lt; Back
-            </button>
-            <p>Price starts at</p>
-            <h3 class='tour-price'>₱499<span>/pax</span></h3>
-            <button class='booking-btn'>Let's Go!</button>
-          </div>
-        </div>
-        <div class='card'>
-          <div class='front-side'>
-            <img src='./images/siargao.jpg' class='card__img' alt=''>
-            <h1 class='tour-name'>Siargao</h1>
-            <ul class='card__list'>
-              <li class='card__list-item'>7-day tour</li>
-              <li class='card__list-item'>Lorem, ipsum dolor.</li>
-              <li class='card__list-item'>Lorem, ipsum dolor.</li>
-              <li class='card__list-item'>Lorem, ipsum dolor.</li>
-            </ul>
-            <button class='switch-side-btn'>Price &gt;</button>
-          </div>
-          <div class='back-side center'>
-            <button class='switch-side-btn'>
-              &lt; Back
-            </button>
-            <p>Price starts at</p>
-            <h3 class='tour-price'>₱599<span>/pax</span></h3>
-            <button class='booking-btn'>Let's Go!</button>
-          </div>
-        </div>
-      </div>
-    </section>
-
-    <!-- About -->
-    <section class='about' id='about-us'>
-      <h1 class='about__heading'>About Us</h1>
-      <div class='about__items'>
-        <img src='./images/friends.svg' alt='team photo' class='about__img'>
-        <div class='why-us-items'>
-          <h2>Why Choose Us?</h2>
-          <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Cupiditate eos amet voluptatem necessitatibus
-            corporis repudiandae consequatur, sunt tenetur facilis? Illum?</p>
-          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatibus sequi commodi reprehenderit
-            corrupti?
-          </p>
-          <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Saepe voluptatem excepturi consequatur omnis
-            eius, totam dolores facilis odio deserunt delectus!
-          </p>
-          <div class='buttons-wrapper'>
-            <button class='read-more btn'>Read More</button>
-            <button class='get-in-touch btn'>Get In Touch</button>
-          </div>
-        </div>
-      </div>
-      <div class='stats-container center'>
-        <div class='stats-wrapper'>
-          <div class='stats'>
-            <span>1,000+</span>
-            <span>Tours Finished</span>
-          </div>
-          <div class='stats'>
-            <span>9,000+ hrs</span>
-            <span>Travel Time</span>
-          </div>
-          <div class='stats'>
-            <span>100,000+</span>
-            <span>Photos Taken</span>
+          <!-- Card 3 -->
+          <div class='card scroll'>
+            <div class='front-side '>
+              <div class="img__wrapper">
+                <img src='./images/siargao-400.webp' class='card__img' aria-hidden="true" loading="lazy"
+                  decoding="async" alt=''>
+                <span class='tour-name'>Siargao</span>
+              </div>
+              <button class='switch-btn'>Price <i class="fa-solid fa-greater-than"></i></button>
+              <ul class='featured-tours__description'>
+                <li>7-day tour</li>
+                <li>Lorem, ipsum dolor.</li>
+                <li>Lorem, ipsum dolor.</li>
+              </ul>
+            </div>
+            <div class='back-side'>
+              <button class='switch-btn'>
+                <i class="fa-solid fa-less-than"></i> Back
+              </button>
+              <p>Price starts at</p>
+              <span class='tour-price'>₱599<span>/pax</span></span>
+              <button class='btn btn-alt'>Let's Go!</button>
+            </div>
           </div>
         </div>
       </div>
     </section>
 
-    <!-- Reviews -->
+    <!-- ============ -->
+    <!--    ABOUT     -->
+    <!-- ============ -->
+
+    <section class='about' id='about'>
+      <div class="container">
+        <h2 class='about__heading'>About Us</h2>
+        <div class='about__items'>
+          <div class="img__wrapper">
+            <img src='./images/about-800.webp' alt='team photo' class='about__img'>
+          </div>
+          <div class='about__content'>
+            <h3>Why Choose Us?</h3>
+            <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Cupiditate eos amet voluptatem necessitatibus
+              corporis repudiandae consequatur, sunt tenetur facilis? Illum?</p>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatibus sequi commodi reprehenderit
+              corrupti?
+            </p>
+            <div class='btn__wrapper'>
+              <button class='btn btn-alt'>Read More</button>
+              <button class='btn btn-primary'>Get In Touch</button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="stats">
+      <div class='container'>
+        <div class='stat'>
+          <span>1,000+</span>
+          <span>Tours Finished</span>
+        </div>
+        <div class='stat'>
+          <span>9,000+ hrs</span>
+          <span>Travel Time</span>
+        </div>
+        <div class='stat'>
+          <span>100,000+</span>
+          <span>Photos Taken</span>
+        </div>
+    </section>
+
+    <!-- ============ -->
+    <!--   REVIEWS    -->
+    <!-- ============ -->
+
     <section class='reviews' id='reviews'>
-      <h1 class='reviews__heading'>Reviews</h1>
-      <div class='reviews__wrapper'>
-        <div class='review-bg'>
-          <div class='review'>
-            <img src='./images/mj.jpg' class='review__img' alt=''>
+      <div class="container">
+        <h2 class='reviews__heading'>Reviews</h2>
+        <div class='reviews__wrapper'>
+          <!-- Review 1 -->
+          <div class='review scroll'>
+            <div class='review__img'>
+              <img src='./images/mj-200.webp' aria-hidden="true" loading="lazy" decoding="async" alt=''>
+            </div>
             <div class='review__text'>
-              <h1 class='review__heading'>Traveling with friends is one of life's greatest gifts.</h1>
-              <p class='review__para'>
-                Lorem ipsum dolor sit amet consectetur adipisicing elit. Rerum nemo delectus dolores ipsam consequatur
-                necessitatibus beatae quaerat! Similique perspiciatis odio doloribus reiciendis tempore assumenda
-                tenetur?
+              <span>MARJUNE P.</span>
+              <span>Mountaineer</span>
+              <p>
+                Lorem ipsum dolor, sit amet consectetur adipisicing elit. Architecto?
               </p>
             </div>
+            <div class='rating'>
+              <span>Overall Rating: </span>
+              <div class='stars'>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+              </div>
+            </div>
           </div>
-          <div class='rating'>
-            <span>Overall Rating: </span>
-            <div class='stars'>
-              <i class="fas fa-star"></i>
-              <i class="fas fa-star"></i>
-              <i class="fas fa-star"></i>
-              <i class="fas fa-star"></i>
-              <i class="fas fa-star"></i>
+          <!-- Review 2 -->
+          <div class='review scroll'>
+            <div class='review__img'>
+              <img src='./images/tina-200.webp' aria-hidden="true" loading="lazy" decoding="async" alt=''>
+            </div>
+            <div class='review__text'>
+              <span>CRISTINA C.</span>
+              <span>Vlogger</span>
+              <p>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Aspernatur!
+              </p>
+            </div>
+            <div class='rating'>
+              <span>Overall Rating: </span>
+              <div class='stars'>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+              </div>
+            </div>
+          </div>
+          <!-- Review 3 -->
+          <div class='review scroll'>
+            <div class='review__img'>
+              <img src='./images/jose-300.webp' aria-hidden="true" loading="lazy" decoding="async" alt=''>
+            </div>
+            <div class='review__text'>
+              <span>JOSE M.</span>
+              <span>Photographer</span>
+              <p>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Facere.
+              </p>
+            </div>
+            <div class='rating'>
+              <span>Overall Rating: </span>
+              <div class='stars'>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+              </div>
             </div>
           </div>
         </div>
-        <div class='review-bg'>
-          <div class='review'>
-            <img src='./images/tina.jpg' class='review__img' alt=''>
-            <div class='review__text'>
-              <h1 class='review__heading'> Can't wait to
-                travel again and take more photos with friends!</h1>
-              <p class='review__para'>
-                Lorem ipsum dolor sit amet consectetur adipisicing elit. Rerum nemo delectus dolores ipsam consequatur
-                necessitatibus beatae quaerat! Similique perspiciatis odio doloribus reiciendis tempore assumenda
-                tenetur?
-              </p>
-            </div>
-          </div>
-          <div class='rating'>
-            <span>Overall Rating: </span>
-            <div class='stars'>
-              <i class="fas fa-star"></i>
-              <i class="fas fa-star"></i>
-              <i class="fas fa-star"></i>
-              <i class="fas fa-star"></i>
-              <i class="fas fa-star"></i>
-            </div>
-          </div>
-        </div>
+      </div>
     </section>
 
-    <!-- Contact -->
+    <!-- ============ -->
+    <!--   CONTACT    -->
+    <!-- ============ -->
+
     <section class='contact' id='contact'>
-      <div class='contact__text center'>
-        <h2>Contact Us</h2>
-        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Fugiat laborum perspiciatis ea. Inventore nulla sint
-          molestias hic tempora delectus. Amet sed reprehenderit minus earum?</p>
-      </div>
-      <div class='contact-container center'>
-        <div class='contact-info'>
-          <div class='info-item'>
-            <div class='info-icon'>
-              <i class='fa fa-map-marker' aria-hidden="true"></i>
-            </div>
-            <div class='info-text'>
-              <h3>Address</h3>
-              <p>123 Street, Malikhain Village</p>
-              <p>Quezon City, Philippines</p>
-            </div>
-          </div>
-          <div class='info-item'>
-            <div class='info-icon'>
-              <i class='fa fa-phone' aria-hidden="true"></i>
-            </div>
-            <div class='info-text'>
-              <h3>Phone</h3>
-              <p> +6312-345-6789</p>
-            </div>
-          </div>
-          <div class='info-item'>
-            <div class='info-icon'>
-              <i class='fa fa-envelope-open' aria-hidden="true"></i>
-            </div>
-            <div class='info-text'>
-              <h3>Email</h3>
-              <p>travelngo@contact-us.com</p>
-            </div>
-          </div>
+      <div class="container">
+        <div class='contact__text'>
+          <h2>Contact Us</h2>
+          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Fugiat laborum perspiciatis ea. Inventore nulla
+            sint
+            molestias hic tempora delectus. Amet sed reprehenderit minus earum?</p>
         </div>
-        <div class='contact-form'>
-          <form>
-            <h2>Send Message</h2>
-            <div class='contact-form-item'>
+        <div class='contact__wrapper'>
+          <div class='contact__info'>
+            <div class='contact__info-item'>
+              <div class='contact__icon'>
+                <i class='fa fa-map-marker' aria-hidden="true"></i>
+              </div>
+              <div class='info__text'>
+                <span>Address</span>
+                <span>123 Street, Malikhain Village</span>
+                <span>Quezon City, Philippines</span>
+              </div>
+            </div>
+            <div class='contact__info-item'>
+              <div class='contact__icon'>
+                <i class='fa fa-phone' aria-hidden="true"></i>
+              </div>
+              <div class='info__text'>
+                <span>Phone</span>
+                <span> +6312-345-6789</span>
+              </div>
+            </div>
+            <div class='contact__info-item'>
+              <div class='contact__icon'>
+                <i class='fa fa-envelope-open' aria-hidden="true"></i>
+              </div>
+              <div class='info__text'>
+                <span>Email</span>
+                <span>travelngo@contact-us.com</span>
+              </div>
+            </div>
+
+          </div>
+          <form class="contact__form">
+            <h2>Book A Trip</h2>
+            <div class='contact__form-item'>
               <input type='text' name='' required>
               <span>Full Name</span>
             </div>
-            <div class='contact-form-item'>
+            <div class='contact__form-item'>
               <input type='text' name='' required>
               <span>Email</span>
             </div>
-            <div class='contact-form-item'>
+            <div class='contact__form-item'>
               <textarea required></textarea>
-              <span>Type your message here</span>
+              <span>Message</span>
             </div>
-            <div class='btn-wrapper'>
-              <input type='submit' class='form-submit btn' value='Send'>
+            <div class='btn__wrapper'>
+              <button class="btn btn-alt">SEND</button>
             </div>
           </form>
         </div>
-      </div>
-      <div class='social-media-1'>
-        <a href='#'><i class='fab fa-facebook-f'></i></a>
-        <a href='#'><i class='fab fa-twitter'></i></a>
-        <a href='#'><i class='fab fa-instagram'></i></a>
       </div>
     </section>
 
     <!-- Footer -->
     <footer class='footer'>
-      <div class='sign-up-container center'>
+      <div class='container'>
         <h3>Sign up for 30% discount!</h3>
-        <p class='sign-up-text'>Lorem ipsum dolor sit amet consectetur adipisicing elit. Laudantium non atque at rerum
-          consequuntur ipsa
-          earum obcaecati fuga nisi veniam!</p>
-        <form class='sign-up-form'>
-          <input type='email' class='sign-up-email' placeholder='Enter email here'>
-          <input type='submit' class='sign-up-btn' value='Send Email'>
+        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quo?</p>
+        <form>
+          <input type='email' class='sign-up-email' placeholder='Enter Email' required>
+          <button class="btn btn-alt">SIGN UP</button>
         </form>
         <div class='copyright'>
-          <p class='footer-para center'> &copy; 2021 Travel & Go / All rights reserved.</p>
+          <div class='social-media'>
+            <span>Follow us:</span>
+            <a href='#'><i class='fab fa-facebook-f'></i></a>
+            <a href='#'><i class='fab fa-twitter'></i></a>
+            <a href='#'><i class='fab fa-instagram'></i></a>
+            <p class='footer-para center'> &copy; 2022 Travel & Go / All rights reserved.</p>
+          </div>
         </div>
       </div>
     </footer>
-  </div>
-  <script src='./script.js'></script>
-</body>
+  </body>
 
 </html>
